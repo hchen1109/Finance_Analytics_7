@@ -1,6 +1,7 @@
 # Finance Analytics No.7: ETF Analyzer
 
-#### This Jupyter notebook contains analysis of the housing rental market data for San Francisco with professionally styled and formatted interactive visualizations.  It includes aggregation, interactive visualizations, and geospatial analysis, to find properties in the San Francisco market that are viable investment opportunities. 
+#### This Jupyter notebook contains analysis of a hypothetical fintech ETF by using SQL, Python, and the Voilà library. It analyzes a single asset in the ETF, optimizes data access with advanced SQL queries,examines the ETF portfolio, and deploys the notebook as a web application.
+
 ---
 
 ## Technologies
@@ -13,11 +14,9 @@ This project leverages python 3.7 with the following packages:
 
 * [matplotlib] (https://matplotlib.org) - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 
-* numpy
+* [numpy] (https://numpy.org) - NumPy brings the computational power of languages like C and Fortran to Python, a language much easier to learn and use. 
 
-* SQLAlchemy
-
-* [dotenv] (https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. 
+* [SQLAlchemy] (https://www.sqlalchemy.org) - SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives application developers the full power and flexibility of SQL.
 
 * [hvPlot] (https://hvplot.holoviz.org/) - hvPlot provides an alternative for the static plotting API provided by Pandas and other libraries, with an interactive Bokeh-based plotting API that supports panning, zooming, hovering, and clickable/selectable legends.
 
@@ -30,8 +29,8 @@ Before running the application first install the following dependencies.
 ```python
   conda activate dev
   jupyter lab
-  pyviz hvPlot GeoViews
-
+  pip install SQLAlchemy
+  conda install -c conda-forge voila
 ```
 ---
 
@@ -41,8 +40,8 @@ To use the loan qualifier application simply clone the repository and run the fo
 
 ```python
   cd Github
-  cd Finance_Analytics_6
-  San_francisco_housing.jpynb
+  cd Finance_Analytics_7
+  etf_analyzer.jpynb
 ```
 
 ---
@@ -51,13 +50,5 @@ To use the loan qualifier application simply clone the repository and run the fo
 
 Brought to you by Haoyu Chen
 
-* conda activate dev
-* pip install SQLAlchemy
-* conda install -c conda-forge voila
-
-numpy
-
-hvplot
-SQLAlchemy
 
 
